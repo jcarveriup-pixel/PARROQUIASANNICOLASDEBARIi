@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #12385f;
+}
+
+/* CONTENEDOR GENERAL */
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 95px;
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 190px;
+}
+
+nav {
+    display: flex;
+    gap: 38px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.linea {
+    width: 100%;
+    height: 7px;
+    background-color: #173f69;
+}
+
+/* CONTENIDO */
+
+main {
+    width: 100%;
+    padding: 70px 95px 85px 95px;
+}
+
+h1 {
+    display: inline-block;
+    color: #173f69;
+    font-size: 36px;
+    font-weight: 500;
+    text-decoration: underline overline;
+    text-underline-offset: 6px;
+    margin-bottom: 65px;
+}
+
+/* MENU SACRAMENTOS */
+
+.menu-sacramentos {
+    width: 86%;
+    margin: 0 auto 75px auto;
+    background-color: #9fb0c3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.menu-sacramentos a {
+    color: #173f69;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 7px 0;
+}
+
+/* SACRAMENTO */
+
+.sacramento {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.texto-sacramento {
+    max-width: 700px;
+}
+
+.texto-sacramento h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 38px;
+    color: #173f69;
+}
+
+.texto-sacramento h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 28px;
+    margin-bottom: 6px;
+    color: #173f69;
+}
+
+.texto-sacramento p {
+    color: #000;
+    font-size: 17px;
+    line-height: 1.22;
+}
+
+.imagen-sacramento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-sacramento img {
+    width: 360px;
+    max-width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #4d7198;
+    color: white;
+    padding: 45px 90px;
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr 1fr 1.3fr 1fr;
+    gap: 45px;
+}
+
+footer h4 {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.redes {
+    display: flex;
+    gap: 18px;
+    font-size: 30px;
+    color: #0f2f4f;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    header {
+        height: auto;
+        padding: 25px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    main {
+        padding: 50px 25px 70px 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 45px;
+    }
+
+    .menu-sacramentos {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-sacramentos a {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .sacramento {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .texto-sacramento p {
+        font-size: 15px;
+    }
+
+    .imagen-sacramento img {
+        width: 280px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        padding: 35px 25px;
+    }
+}
+.menu-sacramentos a.activo {
+    border: 2px solid black;
+}
