@@ -1,0 +1,1068 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #12385f;
+}
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+/* HEADER GENERAL */
+
+header {
+    width: 100%;
+    height: 95px;
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 190px;
+}
+
+nav {
+    display: flex;
+    gap: 38px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.linea {
+    width: 100%;
+    height: 7px;
+    background-color: #173f69;
+}
+
+/* ========================= */
+/* PÁGINA PRINCIPAL - INDEX */
+/* ========================= */
+
+.hero {
+    width: 100%;
+    padding: 45px 70px 0 70px;
+}
+
+.hero img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeria {
+    width: 100%;
+    padding: 55px 120px 0 120px;
+    display: grid;
+    grid-template-columns: 230px 230px 1fr;
+    gap: 14px;
+}
+
+.columna-izquierda,
+.columna-centro {
+    display: grid;
+    grid-template-rows: 230px 230px;
+    gap: 14px;
+}
+
+.caja {
+    width: 100%;
+    height: 230px;
+}
+
+.foto-blanca {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-blanca p {
+    font-size: 28px;
+    color: black;
+}
+
+.azul {
+    background-color: #4d7198;
+    color: black;
+}
+
+.texto {
+    padding: 35px 22px;
+    position: relative;
+}
+
+.texto p {
+    font-size: 29px;
+    line-height: 1.1;
+}
+
+.texto span {
+    position: absolute;
+    bottom: 14px;
+    right: 16px;
+    font-size: 8px;
+    color: white;
+}
+
+.texto-sacramento-index {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.texto-sacramento-index p {
+    font-size: 29px;
+    line-height: 1.1;
+}
+
+.imagen-chica img,
+.imagen-grande img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* HORARIOS INDEX */
+
+.seccion {
+    width: 100%;
+    padding: 80px 90px 0 90px;
+}
+
+h2 {
+    color: #173f69;
+}
+
+.seccion h2,
+.novedades h2 {
+    text-align: center;
+    color: #173f69;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline overline;
+    text-underline-offset: 6px;
+    margin-bottom: 35px;
+}
+
+.tarjeta {
+    background-color: #4d7198;
+    color: white;
+    border-radius: 28px;
+    padding: 38px 45px;
+    margin: 0 auto 55px auto;
+    width: 85%;
+    max-width: 1200px;
+}
+
+.tarjeta h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.tarjeta p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.templo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.templo img {
+    width: 100px;
+}
+
+/* NOVEDADES INDEX */
+
+.novedades {
+    width: 100%;
+    padding: 80px 90px 110px 90px;
+}
+
+.contenedor-novedades {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.novedad {
+    width: 260px;
+    height: 330px;
+    background-color: #d9d9d9;
+    border-radius: 24px;
+}
+
+/* ========================= */
+/* PÁGINAS VIDA DE FE */
+/* ========================= */
+
+main {
+    width: 100%;
+    padding: 70px 95px 85px 95px;
+}
+
+main h1 {
+    display: inline-block;
+    color: #173f69;
+    font-size: 36px;
+    font-weight: 500;
+    text-decoration: underline overline;
+    text-underline-offset: 6px;
+    margin-bottom: 65px;
+}
+
+/* MENÚ SACRAMENTOS */
+
+.menu-sacramentos {
+    width: 86%;
+    margin: 0 auto 75px auto;
+    background-color: #9fb0c3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.menu-sacramentos a {
+    color: #173f69;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 8px 0;
+}
+
+.menu-sacramentos a.activo {
+    border: 2px solid black;
+}
+
+/* CONTENIDO SACRAMENTO */
+
+.sacramento {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.texto-sacramento {
+    max-width: 700px;
+}
+
+.texto-sacramento h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 38px;
+    color: #173f69;
+}
+
+.texto-sacramento h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 28px;
+    margin-bottom: 6px;
+    color: #173f69;
+}
+
+.texto-sacramento p {
+    color: #000;
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.imagen-sacramento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-sacramento img {
+    width: 360px;
+    max-width: 100%;
+}
+
+/* ========================= */
+/* FOOTER GENERAL */
+/* ========================= */
+
+footer {
+    width: 100%;
+    background-color: #4d7198;
+    color: white;
+    padding: 45px 90px;
+    display: grid;
+    grid-template-columns: 1.1fr 1.1fr 1fr 1.3fr 1fr;
+    gap: 45px;
+}
+
+footer h4 {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.redes {
+    display: flex;
+    gap: 18px;
+    font-size: 30px;
+    color: #0f2f4f;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1100px) {
+
+    header {
+        padding: 0 40px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    nav {
+        gap: 22px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 40px 45px 0 45px;
+    }
+
+    .hero img {
+        height: 360px;
+    }
+
+    .galeria {
+        padding: 50px 55px 0 55px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagen-grande {
+        grid-column: span 2;
+        height: 360px;
+    }
+
+    .seccion {
+        padding: 70px 50px 0 50px;
+    }
+
+    .tarjeta {
+        width: 95%;
+    }
+
+    .novedades {
+        padding: 70px 50px 100px 50px;
+    }
+
+    .novedad {
+        width: 220px;
+        height: 290px;
+    }
+
+    main {
+        padding: 60px 55px 75px 55px;
+    }
+
+    main h1 {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    .menu-sacramentos {
+        width: 95%;
+    }
+
+    .menu-sacramentos a {
+        font-size: 17px;
+    }
+
+    .sacramento {
+        grid-template-columns: 1fr 0.8fr;
+        gap: 40px;
+    }
+
+    .texto-sacramento p {
+        font-size: 15px;
+    }
+
+    .imagen-sacramento img {
+        width: 300px;
+    }
+
+    footer {
+        padding: 40px 45px;
+        gap: 30px;
+    }
+
+    footer h4 {
+        font-size: 11px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+        padding: 25px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 30px 22px 0 22px;
+    }
+
+    .hero img {
+        height: 260px;
+    }
+
+    .galeria {
+        padding: 40px 22px 0 22px;
+        grid-template-columns: 1fr;
+    }
+
+    .columna-izquierda,
+    .columna-centro {
+        grid-template-rows: auto;
+    }
+
+    .caja {
+        height: 220px;
+    }
+
+    .imagen-grande {
+        grid-column: span 1;
+        height: 280px;
+    }
+
+    .seccion {
+        padding: 60px 22px 0 22px;
+    }
+
+    .seccion h2,
+    .novedades h2 {
+        font-size: 26px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        padding: 30px 25px;
+    }
+
+    .tarjeta h3 {
+        font-size: 21px;
+    }
+
+    .tarjeta p {
+        font-size: 14px;
+    }
+
+    .templo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .contenedor-novedades {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .novedad {
+        width: 100%;
+        max-width: 320px;
+        height: 280px;
+    }
+
+    main {
+        padding: 45px 22px 60px 22px;
+    }
+
+    main h1 {
+        font-size: 29px;
+        margin-bottom: 40px;
+    }
+
+    .menu-sacramentos {
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+    }
+
+    .menu-sacramentos a {
+        font-size: 17px;
+        padding: 11px 0;
+        border-bottom: 1px solid #7f93a8;
+    }
+
+    .menu-sacramentos a.activo {
+        border: 2px solid black;
+    }
+
+    .sacramento {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .texto-sacramento {
+        max-width: 100%;
+    }
+
+    .texto-sacramento h2 {
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+
+    .texto-sacramento h3 {
+        font-size: 21px;
+        margin-top: 24px;
+    }
+
+    .texto-sacramento p {
+        font-size: 15px;
+        line-height: 1.35;
+    }
+
+    .imagen-sacramento img {
+        width: 260px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        padding: 35px 25px;
+        gap: 25px;
+    }
+
+    footer h4 {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .redes {
+        font-size: 26px;
+    }
+}
+
+/* ============================= */
+/* COMPUTADORA */
+/* Pantallas grandes */
+/* ============================= */
+
+@media (min-width: 1101px) {
+
+    header {
+        height: 95px;
+        padding: 0 75px;
+        flex-direction: row;
+    }
+
+    nav {
+        display: flex;
+        gap: 38px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 190px;
+    }
+
+    /* Inicio */
+
+    .inicio .hero img {
+        height: 420px;
+    }
+
+    .inicio .galeria {
+        display: grid;
+        grid-template-columns: 230px 230px 1fr;
+        gap: 14px;
+        padding: 55px 120px 0 120px;
+    }
+
+    .inicio .columna-izquierda,
+    .inicio .columna-centro {
+        display: grid;
+        grid-template-rows: 230px 230px;
+        gap: 14px;
+    }
+
+    .inicio .caja {
+        height: 230px;
+    }
+
+    .inicio .imagen-grande {
+        height: 474px;
+    }
+
+    .inicio .tarjeta {
+        width: 85%;
+    }
+
+    .inicio .contenedor-novedades {
+        flex-direction: row;
+    }
+
+    /* Vida de fe */
+
+    .vida-fe main {
+        padding: 70px 95px 85px 95px;
+    }
+
+    .vida-fe .menu-sacramentos {
+        grid-template-columns: repeat(4, 1fr);
+        width: 86%;
+    }
+
+    .vida-fe .sacramento {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 70px;
+        align-items: center;
+    }
+
+    .vida-fe .imagen-sacramento img {
+        width: 360px;
+    }
+
+    footer {
+        grid-template-columns: 1.1fr 1.1fr 1fr 1.3fr 1fr;
+    }
+}
+
+
+/* ============================= */
+/* TABLET */
+/* Pantallas medianas */
+/* ============================= */
+
+@media (max-width: 1100px) and (min-width: 701px) {
+
+    header {
+        height: auto;
+        padding: 25px 40px;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 22px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    /* Inicio */
+
+    .inicio .hero {
+        padding: 40px 45px 0 45px;
+    }
+
+    .inicio .hero img {
+        height: 360px;
+    }
+
+    .inicio .galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        padding: 50px 55px 0 55px;
+    }
+
+    .inicio .columna-izquierda,
+    .inicio .columna-centro {
+        display: grid;
+        grid-template-rows: 220px 220px;
+        gap: 14px;
+    }
+
+    .inicio .caja {
+        height: 220px;
+    }
+
+    .inicio .imagen-grande {
+        grid-column: span 2;
+        height: 360px;
+    }
+
+    .inicio .seccion {
+        padding: 70px 50px 0 50px;
+    }
+
+    .inicio .tarjeta {
+        width: 95%;
+    }
+
+    .inicio .contenedor-novedades {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .inicio .novedad {
+        width: 220px;
+        height: 290px;
+    }
+
+    /* Vida de fe */
+
+    .vida-fe main {
+        padding: 60px 55px 75px 55px;
+    }
+
+    .vida-fe main h1 {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+
+    .vida-fe .menu-sacramentos {
+        width: 95%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .vida-fe .menu-sacramentos a {
+        font-size: 17px;
+    }
+
+    .vida-fe .sacramento {
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        gap: 40px;
+    }
+
+    .vida-fe .texto-sacramento p {
+        font-size: 15px;
+    }
+
+    .vida-fe .imagen-sacramento img {
+        width: 300px;
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 45px;
+        gap: 30px;
+    }
+
+    footer h4 {
+        font-size: 11px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+}
+
+
+/* ============================= */
+/* TELÉFONO */
+/* Pantallas chicas */
+/* ============================= */
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+        padding: 25px 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .linea {
+        height: 5px;
+    }
+
+    /* Inicio */
+
+    .inicio .hero {
+        padding: 30px 20px 0 20px;
+    }
+
+    .inicio .hero img {
+        height: 240px;
+    }
+
+    .inicio .galeria {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 40px 22px 0 22px;
+    }
+
+    .inicio .columna-izquierda,
+    .inicio .columna-centro {
+        display: grid;
+        grid-template-rows: auto;
+        gap: 14px;
+    }
+
+    .inicio .caja {
+        height: 210px;
+    }
+
+    .inicio .imagen-grande {
+        height: 270px;
+    }
+
+    .inicio .seccion {
+        padding: 55px 22px 0 22px;
+    }
+
+    .inicio .seccion h2,
+    .inicio .novedades h2 {
+        font-size: 26px;
+    }
+
+    .inicio .tarjeta {
+        width: 100%;
+        padding: 28px 24px;
+        border-radius: 22px;
+    }
+
+    .inicio .tarjeta h3 {
+        font-size: 21px;
+    }
+
+    .inicio .tarjeta p {
+        font-size: 14px;
+    }
+
+    .inicio .templo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .inicio .contenedor-novedades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio .novedad {
+        width: 100%;
+        max-width: 320px;
+        height: 260px;
+    }
+
+    /* Vida de fe */
+
+    .vida-fe main {
+        padding: 45px 22px 60px 22px;
+    }
+
+    .vida-fe main h1 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .vida-fe .menu-sacramentos {
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin-bottom: 45px;
+    }
+
+    .vida-fe .menu-sacramentos a {
+        font-size: 16px;
+        padding: 11px 0;
+        border-bottom: 1px solid #7f93a8;
+    }
+
+    .vida-fe .sacramento {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .vida-fe .texto-sacramento {
+        max-width: 100%;
+    }
+
+    .vida-fe .texto-sacramento h2 {
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+
+    .vida-fe .texto-sacramento h3 {
+        font-size: 21px;
+        margin-top: 24px;
+    }
+
+    .vida-fe .texto-sacramento p {
+        font-size: 15px;
+        line-height: 1.35;
+    }
+
+    .vida-fe .imagen-sacramento img {
+        width: 250px;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        padding: 35px 25px;
+        gap: 25px;
+    }
+
+    footer h4 {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .redes {
+        font-size: 26px;
+    }
+}
+/* ============================= */
+/* GALERÍA PRINCIPAL EN TELÉFONO */
+/* Mantiene el diseño como en computadora */
+/* ============================= */
+
+@media (max-width: 700px) {
+
+    .inicio .galeria {
+        display: grid;
+        grid-template-columns: 0.8fr 0.8fr 2.6fr;
+        gap: 6px;
+        padding: 35px 12px 0 12px;
+        align-items: stretch;
+    }
+
+    .inicio .columna-izquierda,
+    .inicio .columna-centro {
+        display: grid;
+        grid-template-rows: 115px 115px;
+        gap: 6px;
+    }
+
+    .inicio .caja {
+        height: 115px;
+    }
+
+    .inicio .imagen-grande {
+        height: 236px;
+        grid-column: auto;
+    }
+
+    .inicio .imagen-grande img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .inicio .imagen-chica img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .inicio .foto-blanca p {
+        font-size: 17px;
+    }
+
+    .inicio .texto {
+        padding: 18px 8px;
+    }
+
+    .inicio .texto p {
+        font-size: 15px;
+        line-height: 1.15;
+    }
+
+    .inicio .texto span {
+        font-size: 5px;
+        bottom: 7px;
+        right: 6px;
+    }
+
+    .inicio .texto-sacramento {
+        padding-left: 5px;
+        align-items: flex-start;
+        padding-top: 8px;
+    }
+
+    .inicio .texto-sacramento p {
+        font-size: 13px;
+        line-height: 1.15;
+    }
+}
